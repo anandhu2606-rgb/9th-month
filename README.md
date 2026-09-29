@@ -1,17 +1,16 @@
 # Happy 9th Anniversary
 
-A self-contained, mobile-friendly anniversary page with a built-in Edit mode.
+A mobile-friendly anniversary page with editable messages, photo galleries, and animated decorations.
 
-## Open it
+## Open the page
 
-Open `index.html` directly in a browser. No install or build step is required.
+Open `index.html` directly in a browser. No build step or dependencies are required.
 
-## Personalize it
+## Edit the page
 
-1. Select **Edit page** at the top.
-2. Change the heading or either message.
-3. Use **Add photos** to upload one or more images.
-4. Add captions or remove photos from the editor.
-5. Close the editor to see the finished page.
+- Select **Edit Page** to edit message text and photo captions.
+- Select **＋ Text section** to add a message, or **Remove text section** to delete one.
+- Use **Add Photo** to add images, or **Replace** and **Remove** on a photo to manage it.
+- Edits and uploaded photos are saved in IndexedDB in the same browser on the same device.
 
-Changes are saved automatically in the browser's `localStorage`, including uploaded photos. They remain available when the same browser reopens the page. Clearing browser storage removes them. Very large image collections may exceed browser storage limits, so resize exceptionally large photos first if needed.
+The supplied anniversary photos are included in the repository. Photos uploaded later through the page are saved only in that browser; add them to the repository separately if they should be part of the published site for everyone.
