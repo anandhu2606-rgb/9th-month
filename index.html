@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#d94d68" />
+  <title>Happy 9th Anniversary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="floatie heart red">♥</span><span class="floatie butterfly violet">🦋</span>
+    <span class="floatie butterfly blue">🦋</span><span class="floatie heart pink">♥</span>
+    <span class="floatie butterfly red">🦋</span><span class="floatie heart red small">♥</span>
+    <span class="floatie butterfly blue small">🦋</span><span class="floatie heart pink small">♥</span>
+    <span class="floatie butterfly violet small">🦋</span><span class="floatie heart red">♥</span>
+  </div>
+
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true">9</div>
+    <div>
+      <p class="eyebrow">A little love letter</p>
+      <p class="brand-name">For Sreee, always</p>
+    </div>
+    <button class="edit-toggle" id="editToggle" type="button" aria-pressed="false">
+      <span class="edit-icon">✎</span> <span id="editToggleLabel">Edit page</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="kicker">♡ 9 months of us ♡</p>
+        <h1 id="headingDisplay">HAPPY 9TH<br />ANNIVERSARY</h1>
+        <p class="hero-note">A small corner of the internet for a very big love.</p>
+      </div>
+      <div class="message-card reveal delayed">
+        <div class="quote-mark">“</div>
+        <p id="messageOneDisplay"></p>
+        <div class="card-signoff">With all my heart <span>♥</span></div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span> Keep scrolling</div>
+    </section>
+
+    <section class="gallery-section section-shell">
+      <div class="section-heading">
+        <div><p class="kicker">The little moments</p><h2>Our favorite memories</h2></div>
+        <p class="section-aside">Add the moments that feel like home.</p>
+      </div>
+      <div class="photo-grid" id="galleryOne"></div>
+    </section>
+
+    <section class="second-section section-shell">
+      <div class="memory-label"><span>09</span><i></i><span>months</span></div>
+      <div class="second-layout">
+        <div class="second-heading"><p class="kicker">Still choosing you</p><h2>Every day,<br /><em>more and more.</em></h2></div>
+        <div class="message-card second-card"><div class="quote-mark">“</div><p id="messageTwoDisplay"></p><div class="card-signoff">Happy anniversary, my love <span>♥</span></div></div>
+      </div>
+      <div class="photo-grid lower-grid" id="galleryTwo"></div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell"><span>made with love</span><span>09 · forever to go</span><span>♥</span></footer>
+
+  <aside class="editor-panel" id="editorPanel" aria-hidden="true">
+    <div class="editor-backdrop" id="editorBackdrop"></div>
+    <div class="editor-drawer">
+      <div class="drawer-header"><div><p class="kicker">Personalize your page</p><h2>Edit mode</h2></div><button class="icon-button" id="closeEditor" type="button" aria-label="Close edit mode">×</button></div>
+      <p class="drawer-intro">Your changes save automatically in this browser. Add your own memories whenever you like.</p>
+      <label class="field-label" for="headingInput">Heading</label>
+      <input class="text-input" id="headingInput" type="text" />
+      <label class="field-label" for="messageOneInput">First message</label>
+      <textarea class="text-input text-area" id="messageOneInput" rows="6"></textarea>
+      <label class="field-label" for="messageTwoInput">Second message</label>
+      <textarea class="text-input text-area" id="messageTwoInput" rows="6"></textarea>
+      <div class="editor-photos-head"><div><label class="field-label">Photos</label><p class="field-help">Each photo can have an optional caption.</p></div><label class="add-photo-button"><span>＋</span> Add photos<input id="photoInput" type="file" accept="image/*" multiple /></label></div>
+      <div class="editor-photo-list" id="editorPhotoList"></div>
+      <button class="reset-button" id="resetButton" type="button">Reset to original page</button>
+    </div>
+  </aside>
+
+  <template id="photoCardTemplate"><article class="photo-card"><div class="photo-frame"><img alt="" /><button class="remove-photo" type="button" aria-label="Remove photo">×</button></div><p class="caption"></p></article></template>
+  <script src="script.js"></script>
+</body>
+</html>
